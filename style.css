@@ -52,4 +52,4 @@ footer{border-top:1px solid var(--line);padding:20px;text-align:center;font-fami
 @media(max-width:640px){.lightbox{gap:6px;padding:10px}.lb-close,.lb-prev,.lb-next{width:36px;height:36px;font-size:1.2rem}}
 
 .hero.photo{border:0;background:transparent;text-align:center;margin:10px 0 4px}
-.hero.photo img{width:168px;height:168px;object-fit:cover;border-radius:50%;border:3px solid var(--line);margin:0 auto}
+.hero.photo img{width:200px;height:200px;object-fit:cover;border-radius:50%;border:3px solid var(--line);margin:0 auto}
