@@ -7,7 +7,7 @@ deep forest green, warm stone.
 
 ## Contents
 
-- `index.html` — home: Utah Wildfire Risk hero, intro, Jane Jacobs
+- `index.html` — home: portrait photo, intro, Jane Jacobs
   quote, links to Reports and Gallery.
 - `gallery.html` — all 23 maps, from `assets/gallery/` (15 MB total),
   with a click-to-enlarge lightbox.
