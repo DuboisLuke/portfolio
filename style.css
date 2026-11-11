@@ -1,0 +1,42 @@
+/* Luke Dubois portfolio — standalone draft, 2026-11-10
+   Design direction from Luke: topography maps, mountains, forests.
+   Palette: deep forest green, warm stone, cream. Contour motif via
+   repeating radial gradients on the hero / header band. */
+:root{
+  --forest:#1e3a2f; --forest2:#2c5240; --moss:#5a7a5e; --stone:#e8e2d4;
+  --cream:#f7f4ec; --ink:#22302a; --accent:#c98a3d; --line:#d8d0bd;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,'Times New Roman',serif;background:var(--cream);color:var(--ink);line-height:1.55}
+a{color:var(--forest2)}
+header.site{background:var(--forest);color:#fff;padding:14px 22px;display:flex;flex-wrap:wrap;gap:16px;align-items:baseline;justify-content:space-between;
+  background-image:repeating-radial-gradient(circle at 20% 0, transparent 0 28px, rgba(255,255,255,.06) 28px 29px),
+                   repeating-radial-gradient(circle at 80% 100%, transparent 0 36px, rgba(255,255,255,.05) 36px 37px);}
+header.site .wordmark{font-size:1.35rem;letter-spacing:.22em;font-weight:700}
+header.site nav a{color:#fff;text-decoration:none;margin:0 10px;font-family:system-ui,sans-serif;font-size:.95rem}
+header.site nav a:hover{text-decoration:underline}
+header.site .resume{background:var(--accent);color:#fff;padding:7px 14px;border-radius:4px;text-decoration:none;font-family:system-ui,sans-serif}
+main{max-width:1020px;margin:0 auto;padding:24px 20px 60px}
+.hero{border:1px solid var(--line);background:#fff;border-radius:8px;overflow:hidden;margin:18px 0 28px}
+.hero img{width:100%;display:block}
+.hero .cap{padding:16px 20px}
+h1{font-size:2rem;margin:.2em 0}
+h2{color:var(--forest);border-bottom:2px solid var(--accent);padding-bottom:6px}
+.tagline{font-family:system-ui,sans-serif;color:var(--forest2);font-weight:600;letter-spacing:.04em}
+.intro{font-size:1.08rem}
+blockquote{border-left:4px solid var(--accent);margin:28px 0;padding:4px 18px;font-style:italic;color:#3d4a42}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:20px 0}
+.card{border:1px solid var(--line);background:#fff;border-radius:8px;padding:18px}
+.card h3{margin-top:0;color:var(--forest)}
+.btn{display:inline-block;background:var(--forest);color:#fff;padding:9px 16px;border-radius:4px;text-decoration:none;font-family:system-ui,sans-serif}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+figure{margin:0;border:1px solid var(--line);background:#fff;border-radius:8px;overflow:hidden}
+figure img{width:100%;display:block}
+figcaption{padding:10px 12px;font-family:system-ui,sans-serif;font-size:.92rem}
+figcaption .flag{color:#8a5a00;font-weight:600}
+.report{border:1px solid var(--line);background:#fff;border-radius:8px;padding:14px 16px;margin:12px 0}
+.report h3{margin:0 0 4px;color:var(--forest)}
+.report p{margin:0;font-family:system-ui,sans-serif;font-size:.92rem;color:#555}
+footer{border-top:1px solid var(--line);padding:20px;text-align:center;font-family:system-ui,sans-serif;color:#666;font-size:.9rem}
+.note{background:#fff8e6;border:1px solid #e8c97a;border-radius:8px;padding:14px 16px;font-family:system-ui,sans-serif}
+@media(max-width:640px){.cards{grid-template-columns:1fr}h1{font-size:1.6rem}}
